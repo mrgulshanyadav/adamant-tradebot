@@ -1,15 +1,17 @@
-ADAMANT Trading & Market making bot is a software that allows to run trades on crypto exchanges, make trade volume, maintain spread and liquidity, set price range, and build live-like dynamic order book.
+ADAMANT’s market-making bot is software that enables trading on cryptocurrency exchanges. It helps generate trading volume, maintain spread and liquidity, set price ranges, and build a live-like dynamic order book.
 
-This is a free version. For premium features, see [https://marketmaking.app/cex-mm/mm-features](https://marketmaking.app/cex-mm/mm-features/).
+This is the free version — suitable for small crypto projects with low liquidity, traded on centralized exchanges from the open list.
 
-# Market making
+For premium features, see [https://marketmaking.app/cex-mm/mm-features](https://marketmaking.app/cex-mm/mm-features/).
 
-In Market-making mode, the bot places orders and executes them by itself, making a trading volume, maintaining spread and liquidity; builds live-like dynamic order books, and watches a token price. Market making helps:
+# Market-making bot
+
+In Market-making mode, the bot automatically places and executes orders to generate trading volume, maintain spread and liquidity, build live-like dynamic order books, and track token prices. Market making is useful for:
 
 * Cryptocurrency projects (token issuers)
 * Cryptocurrency exchanges
 
-See [marketmaking.app](https://marketmaking.app) to look at the bot possibilities.
+See [marketmaking.app](https://marketmaking.app) to explore the bot’s full list of features.
 
 ![Trading chart](./assets/Making-chart.png)
 
@@ -17,7 +19,7 @@ See [marketmaking.app](https://marketmaking.app) to look at the bot possibilitie
 
 # Profit trading
 
-Profit trading is a mode in which a bot runs orders according to some strategy. For Profit trading, see other software—[CoinOptimus](https://github.com/Adamant-im/adamant-coinoptimus).
+Profit Trading is a mode where the bot executes orders based on a chosen strategy. For profit-trading functionality, see our other software—[CoinOptimus](https://github.com/Adamant-im/adamant-coinoptimus).
 
 # Features
 
@@ -37,19 +39,21 @@ For premium features, see [https://marketmaking.app/cex-mm/mm-features](https://
 
 # Supported exchanges
 
+In the free version, the bot supports the following exchanges out of the box:
+
 * [P2PB2B](https://p2pb2b.com)
 * [Azbit](https://azbit.com?referralCode=9YVWYAF)
 * [StakeCube](https://stakecube.net/?team=adm)
 * [Coinstore](https://h5.coinstore.com/h5/signup?invitCode=o951vZ)
 * [FameEX](https://www.fameex.com/en-US/commissiondispense?code=MKKAWV)
 * [NonKYC](https://nonkyc.io?ref=655b4df9eb13acde84677358)
-* [XeggeX](https://xeggex.com?ref=656846d209bbed85b91aba4d)
+* More exchanges available in the premium version
 
-To add other exchange support, see [https://marketmaking.app/cex-mm/mm-features/#add-more-exchanges](https://marketmaking.app/cex-mm/mm-features/#add-more-exchanges).
+To add support for other exchanges, see [https://marketmaking.app/cex-mm/mm-features/#add-more-exchanges](https://marketmaking.app/cex-mm/mm-features/#add-more-exchanges).
 
 # Usage and Installation
 
-After installation, you control the bot in secure ADAMANT Messenger chat directly. It's self-hosted.
+After installation, you control the bot directly via a secure ADAMANT Messenger chat. The bot is fully self-hosted.
 
 [Installation and usage guide](https://marketmaking.app/cex-mm/installation/).
 
@@ -83,7 +87,7 @@ Parameters: see comments in `config.jsonc`.
 
 ## Launching
 
-You can start the Bot with the `node app` command, but it is recommended to use the process manager for this purpose.
+You can start the bot with the `node app` command, but it is recommended to run it under a process manager:
 
 ```
 pm2 start app.js --name tradebot
@@ -101,6 +105,6 @@ git pull
 npm i
 ```
 
-Update `config.jsonc` if `config.default.jsonc` changed.
+Revise `config.jsonc` if `config.default.jsonc` changed.
 
 Then `pm2 restart tradebot`.
